@@ -1,0 +1,49 @@
+Source Code:
+
+import java.util.Scanner;
+public class Lab3Project {
+    public static void main(String[] args) {
+/* Generate two random intergers */        
+    int number1 = (int)(Math.random() * 12);
+/*Outprint the number to verify there is generation */ 
+   /* System.out.print(number1); */
+  /* Outprint the month */
+    if (number1 == 1) {
+        System.out.print("The month is January!");
+    } else if (number1 == 2){
+                System.out.print("The month is February!");
+                
+    }  else if (number1 == 3){
+                System.out.print("The month is March!");
+                
+    } else if (number1 == 4) {
+                System.out.print("The month is April!");
+                
+    }   else if (number1 == 5) {
+                System.out.print("The month is May!");
+                
+    }   else if (number1 == 6) {
+                System.out.print("The month is June!");
+                
+    }   else if (number1 == 7) {
+                System.out.print("The month is July!");
+                
+    }    else if (number1 == 8) {
+                System.out.print("The month is August!");
+    }            
+    else if (number1 == 9) {
+                System.out.print("The month is September!");
+    }            
+        else if (number1 == 10) {
+                System.out.print("The month is October!");
+    }            
+        else if (number1 == 11) {
+                System.out.print("The month is November!");                        
+    }    else if (number1 == 0) {
+                System.out.print("The month is December!");
+    }          
+   
+    }
+ 
+}
+ 

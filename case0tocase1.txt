@@ -1,0 +1,61 @@
+ switch (status){
+                case 0: System.out.print("This case is for single individuals.");
+                System.out.print("\nPlease enter the taxable income: ");
+        var income = input.nextDouble();
+            if (income <= 8350) {
+            var taxes = (income * .10);
+                System.out.print("The tax owed is $" + taxes);}
+                else if (income <= 33950) {
+                var taxes = (8350 *.10) + ((income -8350) *.15);
+                     System.out.print("The tax owed is $" + taxes);
+                }
+                else if (income <= 82250) {
+                var taxes = (8350 *.10) + ((33950 - 8350) *.15) + ((income - 33950) * .25);
+                        System.out.print("The tax owed is $" + taxes);
+                } 
+                else if (income <= 171550) {
+                var taxes = (8350 *.10) + ((33950 - 8350) *.15) + ((82250 - 33950) * .25) + ((income - 82250) * .28);            
+                            System.out.print("The tax owed is $" + taxes);
+                        }
+                else if (income <= 372950){
+                var taxes = (8350 *.10) + ((33950 - 8350) *.15) + ((82250 - 33950) * .25) + ((171550 - 82250) * .28) + ((income - 171550) * .33);
+                       System.out.print("The tax owed is $" + taxes);
+                        }
+                else if (income >= 372951) {
+                var taxes = (8350 *.10) + ((33950 - 8350) *.15) + ((82250 - 33950) * .25) + ((171550 - 82250) * .28) + ((372950 - 171550) * .33) + ((income - 372951) * .35 );
+                        System.out.print("The tax owed is $" + taxes);
+                        }
+            else {
+                    System.out.print("Error please try again!");
+                }
+                    break;
+                case 1: System.out.print("This case is for married individuals.");
+                System.out.print("\nPlease enter the taxable income: ");
+        var income = input.nextDouble();
+            if (income <= 8350) {
+            var taxes = (income * .10);
+                System.out.print("The tax owed is $" + taxes);}
+                else if (income <= 33950) {
+                var taxes = (8350 *.10) + ((income -8350) *.15);
+                     System.out.print("The tax owed is $" + taxes);
+                }
+                else if (income <= 82250) {
+                var taxes = (8350 *.10) + ((33950 - 8350) *.15) + ((income - 33950) * .25);
+                        System.out.print("The tax owed is $" + taxes);
+                } 
+                else if (income <= 171550) {
+                var taxes = (8350 *.10) + ((33950 - 8350) *.15) + ((82250 - 33950) * .25) + ((income - 82250) * .28);            
+                            System.out.print("The tax owed is $" + taxes);
+                        }
+                else if (income <= 372950){
+                var taxes = (8350 *.10) + ((33950 - 8350) *.15) + ((82250 - 33950) * .25) + ((171550 - 82250) * .28) + ((income - 171550) * .33);
+                       System.out.print("The tax owed is $" + taxes);
+                        }
+                else if (income >= 372951) {
+                var taxes = (8350 *.10) + ((33950 - 8350) *.15) + ((82250 - 33950) * .25) + ((171550 - 82250) * .28) + ((372950 - 171550) * .33) + ((income - 372951) * .35 );
+                        System.out.print("The tax owed is $" + taxes);
+                        }
+            else {
+                    System.out.print("Error please try again!");
+                }    
+                    break;
